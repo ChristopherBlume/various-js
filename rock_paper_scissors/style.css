@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #ededed;
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  height: 50vh;
+}
+
+.player-choice {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #333;
+  width: 80%;
+  height: 75%;
+  margin: 20px;
+}
+
+.player-heading {
+  font-size: 30px;
+}
+
+.computer-choice {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #333;
+  width: 80%;
+  height: 75%;
+  margin: 20px;
+}
+
+.score {
+  font-size: 40px;
+  height: 50px;
+}
+
+.btn-choice {
+  cursor: pointer;
+  padding: 50px;
+}
+
+.pc-choice {
+  padding: 50px;
+}
+
+.winner {
+  color: #2ecc71;
+}
+
+.looser {
+  color: #c0392b;
+}
+
+.align-choices {
+  display: flex;
+  align-content: space-around;
+}
+
+.start-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.animated {
+  animation: color 2s linear;
+}
+
+.animated-computer {
+  animation: color-computer 2s linear;
+}
+
+@keyframes color-computer {
+  0% {
+    color: #c0392b;
+  }
+  75% {
+    color: #ededed;
+  }
+  100% {
+    color: #ededed;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: hsl(36, 78%, 42%);
+  }
+  75% {
+    color: #ededed;
+  }
+  100% {
+    color: #ededed;
+  }
+}
